@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero-section {
+  background: url('images/bg_image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  position: fixed; /* Changed from absolute to fixed */
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Slightly more visible on scroll */
+  z-index: 1000; /* Makes sure it stays on top */
+}
+
+.nav-links a.active {
+  color: rgb(247, 78, 0); /* Blue text for active */
+  font-weight: bold;
+  border-bottom: 2px solid rgb(255, 255, 255); /* Optional underline */
+}
+
+
+
+.logo {
+  font-size: 24px;
+  color:rgb(200, 10, 17);
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #7faa9a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4430de;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #ff4b4b;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: slideDown 1s ease-out;
+}
+
+.banner h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Optional animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

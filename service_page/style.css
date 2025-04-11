@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero-section {
+  background: url('images/bg_image.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.nav-links a.active {
+  color: rgb(247, 78, 0); /* Blue text for active */
+  font-weight: bold;
+  border-bottom: 2px solid rgb(255, 255, 255); /* Optional underline */
+}
+
+
+.logo {
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #583535;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.content {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.services h1 {
+  font-size: 36px;
+  color: aqua;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: grid;
+  color: rgb(212, 255, 0);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-item {
+  background-color: #699e27;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  border: 2px solid #ffffff; /* White stroke added */
+}
+
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+}

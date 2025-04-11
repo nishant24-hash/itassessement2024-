@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | My Website</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="hero-section">
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="../index_page/index.html">Home</a></li>
+        <li><a href="../about_page/about.html">About</a></li>
+        <li><a href="../contact_page/contact.html"class="active">Contact</a></li>
+        <li><a href="../gallery_page/gallery.html">Gallery</a></li>
+        <li><a href="../service_page/Service.html">Service</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+        <textarea id="feedback" name="feedback" placeholder="Your Feedback" required></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps?q=Biratnagar&output=embed"
+          width="100%"
+          height="300"
+          style="border:0; margin-top:20px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>My Website &copy; 2025 | Biratnagar-10 Traffic chowk  9800000000 | <a href="mailto:info@coolwebsite.com" style="color:lightblue;">Email Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
